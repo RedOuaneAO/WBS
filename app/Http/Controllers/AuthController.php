@@ -10,7 +10,7 @@ class AuthController extends Controller
     //
     public function login(Request $Request)
     {
-        return $Request;
+        // return $Request;
         $Request->validate([
             'email' => 'required|string|email',
             'password' => 'required|string',
@@ -24,8 +24,8 @@ class AuthController extends Controller
         return view('/dashboard');
     }
     public function logout() {
-        Auth::logout(); 
-        // $Request->session()->invalidate(); 
-        return redirect('/'); 
+        Auth::logout();
+        // $Request->session()->invalidate();
+        return redirect('/');
     }
 }

@@ -45,7 +45,7 @@
                                 <span class="ms-1 d-none d-sm-inline">Les Facture</span> </a>
                         </li>
                         <li>
-                            <a href="/logout" class="nav-link px-0">
+                            <a href="{{ route('logout') }}" class="nav-link px-0">
                                 <i class="bi bi-box-arrow-left"></i>
                                 <span class="ms-1 d-none d-sm-inline">Logout</span> </a>
                         </li>
