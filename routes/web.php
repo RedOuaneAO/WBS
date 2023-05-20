@@ -21,5 +21,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/logout', [AuthController::class , 'logout'])->name('logout');
 
 Route::post('/login', [AuthController::class , 'login'])->name('login');

@@ -10,7 +10,11 @@ class AuthController extends Controller
     //
     public function login(Request $Request)
     {
-
+        // return $Request;
+        $Request->validate([
+            'email' => 'required|string|email',
+            'password' => 'required|string',
+        ]);
         $credentials = $Request->only('email', 'password');
 
     if (Auth::attempt($credentials)) {
@@ -35,8 +39,8 @@ class AuthController extends Controller
     }
 
     public function logout() {
-        Auth::logout(); 
-        // $Request->session()->invalidate(); 
-        return redirect('/'); 
+        Auth::logout();
+        // $Request->session()->invalidate();
+        return redirect('/');
     }
 }

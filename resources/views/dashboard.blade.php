@@ -18,7 +18,7 @@
                         <li class="">
                             <a href="#" class="nav-link px-0 ">
                                 <i class="bi bi-house"></i>
-                                <span class="ms-1 d-none d-sm-inline">Dashboard</span> 
+                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
                             </a>
                         </li>
                         <li>
@@ -35,7 +35,7 @@
                         <li>
                             <a href="#" class="nav-link px-0">
                                 <i class="bi bi-speedometer2"></i>
-                                <span class="ms-1 d-none d-sm-inline">Add Compteur</span> 
+                                <span class="ms-1 d-none d-sm-inline">Add Compteur</span>
                             </a>
                         </li>
                         <li>
@@ -45,7 +45,7 @@
                                 <span class="ms-1 d-none d-sm-inline">Les Facture</span> </a>
                         </li>
                         <li>
-                            <a href="/logout" class="nav-link px-0">
+                            <a href="{{ route('logout') }}" class="nav-link px-0">
                                 <i class="bi bi-box-arrow-left"></i>
                                 <span class="ms-1 d-none d-sm-inline">Logout</span> </a>
                         </li>
@@ -71,7 +71,7 @@
                                 <!-- Page Heading -->
                                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                                     <h3 class="mb-0 text-secondary">Dashboard</h3>
-                                    
+
                                 </div>
 
                                 <!-- Content Row -->
@@ -174,7 +174,7 @@
                                             <!-- Card Body -->
                                             <div class="card-body">
                                                 <div class="table-responsive">
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -190,7 +190,7 @@
                                             <!-- Card Body -->
                                             <div class="card-body">
                                                 <div class="table-responsive">
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -218,7 +218,7 @@
                                             </div>
                                             <div class="card-body">
                                                 <div class="table-responsive">
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -229,7 +229,11 @@
                         </div>
                         <!-- End of Main Content -->
                         <footer class="sticky-footer  bg-white">
-                            <div class="container">
+                            <div class="container d-flex align-items-center justify-content-evenly ">
+                                <div class="copyright text-center ">
+                                    <span>Created By :<a href="https://elhathoute.github.io/My_Portfolio_Bootstrap/"><strong class="mx-2">ABDELAZIZ</strong></a>&<a href="https://www.linkedin.com/in/redouane-ait-oulaid/"><strong class="mx-2">REDOUANE</strong></a></span>
+                                </div>
+
                                 <div class="copyright text-center ">
                                     <span>Copyright &copy; WBS 2023</span>
                                 </div>
