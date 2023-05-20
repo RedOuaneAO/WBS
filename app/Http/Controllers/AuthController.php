@@ -10,19 +10,30 @@ class AuthController extends Controller
     //
     public function login(Request $Request)
     {
-        return $Request;
-        $Request->validate([
-            'email' => 'required|string|email',
-            'password' => 'required|string',
-        ]);
+
         $credentials = $Request->only('email', 'password');
 
-        $token = Auth::attempt($credentials);
-        if (!$token) {
-            return back();
-        }
-        return view('/dashboard');
+    if (Auth::attempt($credentials)) {
+        // Authentication successful
+        return redirect()->intended('/dashboard');
+    } else {
+        // Authentication failed
+        return redirect()->back()->withErrors(['message' => 'Invalid credentials']);
     }
+        // $Request->validate([
+        //     'email' => 'required|string|email',
+        //     'password' => 'required|string',
+        // ]);
+        // $credentials = $Request->only('email', 'password');
+        
+        // $token = Auth::attempt($credentials);
+
+        // if (!$token) {
+        //     return back();
+        // }
+        // return view('/dashboard');
+    }
+
     public function logout() {
         Auth::logout(); 
         // $Request->session()->invalidate(); 
