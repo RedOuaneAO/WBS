@@ -39,7 +39,7 @@
                 في حال قررت الذهاب إلى عطلة، تأكد من إغلاق جميع صنابير المنزل و قم بإغلاق صمام المياه الرئيسي بإحكام ، فحدوث تسرب بسيط و لفترة زمنية طويلة يؤدي إلى ضياع الماء و قد يتسبب في أضرار بالمنزل
             </p>
           </div>
-  
+
           <div class="col-lg-4 mb-5 mt-md-4 mb-lg-0 pt-sm-5 ps-sm-5" >
             <div class="card">
               <div class="card-body" style="background-color: hsl(0, 0%, 96%)">
@@ -51,13 +51,13 @@
                         <label class="form-label" for="form3Example3">Email address</label>
                         <input type="email" name="email" id="form3Example3" class="form-control" />
                     </div>
-    
+
                     <!-- Password input -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form3Example4">Password</label>
                         <input type="password" name="password" id="form3Example4" class="form-control" />
                     </div>
-    
+
                     <!-- Checkbox -->
                     {{-- <div class="form-check d-flex justify-content-center mb-4"> --}}
                         {{-- <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked /> --}}
@@ -65,7 +65,7 @@
                         Subscribe to our newsletter
                         </label> --}}
                     {{-- </div> --}}
-  
+
                     <!-- Submit button -->
                     <button type="submit" class="btn btn-primary btn-block mb-4">
                         Sign up
@@ -77,6 +77,7 @@
         </div>
       </div>
     </div>
+ 
     <!-- Jumbotron -->
   </section>
   <!-- Section: Design Block -->

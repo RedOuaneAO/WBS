@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ButtonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::get('/dashboard', function () {
 Route::get('/logout', [AuthController::class , 'logout'])->name('logout');
 
 Route::post('/login', [AuthController::class , 'login'])->name('login');
+
+//
