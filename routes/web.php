@@ -14,16 +14,23 @@ use App\Http\Controllers\ButtonController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// auth
 Route::get('/', function () {
     return view('login');
 });
+Route::get('/logout', [AuthController::class , 'logout'])->name('logout');
+Route::post('/login', [AuthController::class , 'login'])->name('login');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
-
-Route::get('/logout', [AuthController::class , 'logout'])->name('logout');
-
-Route::post('/login', [AuthController::class , 'login'])->name('login');
-
-//
+Route::get('/profile', function () {
+    return view('profile');
+});
+Route::get('/addClient', function () {
+    return view('addClient');
+});
+Route::get('/addCompteur', function () {
+    return view('addCompteur');
+});
