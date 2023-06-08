@@ -17,24 +17,16 @@
                                             <h4 class="text-right">Profile Settings</h4>
                                         </div>
                                         <div class="row mt-2">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <label>User name</label>
                                                 <input type="text" name="name" class="form-control" value="{{Auth::user()->name}}">
                                             </div>
-                                            <div class="col-md-6">
-                                                <label>Gender</label>
-                                                <select class="form-select" name="gender">
-                                                    <option value="" disabled selected>Select</option>
-                                                    <option value="Male" {{ Auth::user()->gender == 'Male' ? 'selected' : '' }}>Male</option>
-                                                    <option value="Female" {{ Auth::user()->gender == 'Female' ? 'selected' : '' }}>Female</option>
-                                                </select>
-                                            </div>
+
                                         </div>
                                         <div class="row mt-3">
                                             <div class="col-md-12"><label>Phone Number</label><input type="tel" name="phone" class="form-control" value="{{Auth::user()->phone}}" placeholder="Add your Phone Number"></div>
-                                            <div class="col-md-12"><label>Email</label><input type="email" name="email" class="form-control" value="{{Auth::user()->email}}"></div>
-                                            <div class="col-md-12"><label>Cover</label><input type="file" id="imgInput" name="image"  class="form-control"/></div>
-                                            
+                                            <div class="col-md-12 mt-3"><label>Email</label><input type="email" name="email" class="form-control" value="{{Auth::user()->email}}"></div>
+
                                         </div>
                                     </div>
                                     <div class="my-2 text-center">
